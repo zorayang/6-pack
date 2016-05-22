@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:cacheColorHint="#00000000">
+
+    <ImageView
+        android:id="@+id/ivAccountBackground"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@color/colorBlack"/>
+
+    <ImageView
+        android:id="@+id/ivAccountPicture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:alpha="0.8"
+        android:src="@drawable/rosenbergmacalester"
+        android:layout_above="@+id/ivAcccountScrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mr. Brian Rosenberg"
+        android:padding="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/colorHotPink"
+        android:layout_toRightOf="@+id/ivAccountPicture"
+        android:layout_above="@+id/ivAcccountScrollView" />
+
+    <ScrollView
+        android:id="@+id/ivAcccountScrollView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/ivAccountBackground">
+
+        <LinearLayout
+            android:id="@+id/layout_account_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/ivAccountBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ivAccountBackground">
+
+                <ImageView
+                    android:id="@+id/ivAccountRewardsIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/reward" />
+
+                <TextView
+                    android:id="@+id/tvAccountRewards"
+                    android:layout_toRightOf="@+id/ivAccountRewardsIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="My Balance"
+                    android:textSize="20dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/gradient_separator"
+                android:layout_height="1dp"
+                android:layout_below="@id/ivAcccountScrollView" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ivAccountBackground">
+
+                <ImageView
+                    android:id="@+id/ivAccountCashOutIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/cash_out" />
+
+                <TextView
+                    android:id="@+id/tvAccountCashout"
+                    android:layout_toRightOf="@+id/ivAccountCashOutIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Cash Out Rewards"
+                    android:textSize="20dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/gradient_separator"
+                android:layout_height="1dp"
+                android:layout_below="@id/ivAcccountScrollView" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ivAccountBackground">
+
+                <ImageView
+                    android:id="@+id/ivAccountSettingsIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/settings" />
+
+                <TextView
+                    android:id="@+id/tvAccountSettings"
+                    android:layout_toRightOf="@+id/ivAccountSettingsIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Settings"
+                    android:textSize="20dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/gradient_separator"
+        android:layout_height="1dp"
+        android:layout_below="@id/ivAcccountScrollView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ivAcccountScrollView">
+
+        <ImageView
+            android:id="@+id/ivAccountLogoutIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/exit" />
+
+        <TextView
+            android:id="@+id/tvAccountLogout"
+            android:layout_toRightOf="@+id/ivAccountLogoutIcon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Log out"
+            android:textSize="20dp"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

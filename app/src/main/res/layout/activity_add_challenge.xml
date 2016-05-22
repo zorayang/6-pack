@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="edu.macalester.macathon.sixpack.AddChallengeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/item_toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorHotPink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp">
+        </android.support.v7.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/etChallengeeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Who do you want to challenge?" />
+
+        <Spinner
+            android:id="@+id/challengeTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+        <EditText
+            android:id="@+id/etRewardAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Reward Amount"/>
+
+        <EditText
+            android:id="@+id/etChallengeDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Challenge Description"/>
+
+        <CheckBox
+            android:id="@+id/cbCompleted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already Completed"/>
+
+        <Button
+            android:id="@+id/btnAddChallenge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorHotPink"
+            android:text="Challenge now!"/>
+
+    </LinearLayout>
+
+</ScrollView>

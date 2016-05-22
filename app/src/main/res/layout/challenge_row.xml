@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.macalester.macathon.sixpack.fragments.MyChallengeFragment">
+
+    <LinearLayout
+        android:id="@+id/add_challenge_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="1dp">
+
+            <TextView
+                android:id="@+id/tv_add_challenge_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="10 push-ups"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/tv_add_challenge_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_add_challenge_desc"
+                android:paddingLeft="5dp"
+                android:text="2 Points"
+                android:textColor="@color/colorHotPink"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/cb_add_challenge_completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_add_challenge_amt"
+                android:text="Completed" />
+
+            <TextView
+                android:id="@+id/tv_add_challenge_wait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/tv_add_challenge_desc"
+                android:padding="2dp"
+                android:text="Awaiting Response"
+                android:textColor="@color/colorHotPink" />
+
+            <TextView
+                android:id="@+id/tv_add_challenge_challenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_add_challenge_amt"
+                android:paddingLeft="5dp"
+                android:text="B.R."
+                android:textColor="@color/colorHotPink"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_add_challenge_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_add_challenge_amt"
+                android:text="Cancel"
+                android:textColor="@color/colorHotPink" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/gradient_separator_black" />
+
+    </LinearLayout>
+
+</LinearLayout>

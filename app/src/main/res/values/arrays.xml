@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories_array">
+        <item>Cardio</item>
+        <item>Yoga</item>
+        <item>Pilates</item>
+        <item>Jogging</item>
+        <item>Weight Lifting</item>
+        <item>Other</item>
+    </string-array>
+</resources>
